@@ -34,18 +34,16 @@ email.addEventListener("blur",()=>{
        error(email) 
         par.style.visibility=""
     }else{
-        par.style.visibility="hidden"
-        email.style.borderColor=""
+        noError(par,email)
     }
 }
 )
  firstName.addEventListener("blur",()=>{
      if(firstName.value==""){
-         nameCheck.style.visibility=""
+        nameCheck.style.visibility=""
         error(firstName)
      }else{
-        nameCheck.style.visibility="hidden"
-        firstName.style.borderColor=""
+        noError(nameCheck,firstName)
      }
    
  }
@@ -56,8 +54,7 @@ lastName.addEventListener("blur",()=>{
         error(lastName)
     }
     else {
-        lastNameCheck.style.visibility="hidden"
-        lastName.style.borderColor=""
+        noError(lastNameCheck,lastName)
     }
 }
 )
@@ -68,8 +65,7 @@ pass.addEventListener("blur" ,()=>{
         error(pass)
     }
     else{
-        passCheck.style.visibility="hidden"
-        pass.style.borderColor="    "
+        noError(passCheck,pass)
     }
 }
 )
@@ -79,5 +75,12 @@ function error(element){
     element.style.backgroundRepeat="no-repeat"
     element.style.backgroundPosition="95%"
     element.style.borderColor="red"
+}
+
+function noError(element,input){
+    element.style.visibility="hidden"
+    input.style.borderColor=""
+    element.style.backgroundImage=""
+
 }
 
