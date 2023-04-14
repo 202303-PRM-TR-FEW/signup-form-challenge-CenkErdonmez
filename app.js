@@ -80,7 +80,7 @@ function error(element){
 function noError(element,input){
     element.style.visibility="hidden"
     input.style.borderColor=""
-    element.style.backgroundImage=""
+    input.style.backgroundImage=""
 
 }
 
