@@ -1,0 +1,12 @@
+main{
+    background-image: url(images/bg-intro-desktop.png);
+    background-repeat: no-repeat;
+    background-color: brown;
+    background-size: cover;
+}
+/* input  {
+    outline-color: red;
+    background-image: url(images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: 95%;
+} */
